@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Контакты и запись — Центр подготовки к ЕГЭ и ОГЭ</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="wrap">
+      <a href="index.html" class="logo" aria-label="На главную">
+        <svg class="logo-symbol" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+          <rect width="48" height="48" rx="8" fill="#1e3a5f"/><path d="M24 12v24M16 20h16M16 28h16" stroke="#fff" stroke-width="2" stroke-linecap="round"/><path d="M20 12l4-4 4 4" stroke="#3d7c6e" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+        <span class="logo-text">Центр ЕГЭ и ОГЭ</span>
+      </a>
+      <nav aria-label="Основное меню">
+        <ul class="nav-list"><li><a href="index.html">Главная</a></li><li><a href="programs.html">Программы</a></li><li><a href="teachers.html">Преподаватели</a></li><li><a href="contacts.html">Контакты и запись</a></li></ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <header class="page-header"><h1>Оставить заявку</h1></header>
+    <section class="contacts-layout">
+      <form id="contactForm" class="contact-form" aria-labelledby="form-title">
+        <h2 id="form-title" class="visually-hidden">Форма записи</h2>
+        <div class="form-group"><label for="contactName">Имя *</label><input type="text" id="contactName" name="name" required placeholder="Ваше имя"></div>
+        <div class="form-group"><label for="contactEmail">Email *</label><input type="email" id="contactEmail" name="email" required placeholder="email@example.com"></div>
+        <div class="form-group"><label for="contactPhone">Телефон</label><input type="tel" id="contactPhone" name="phone" placeholder="+7 (999) 123-45-67"></div>
+        <div class="form-group"><label for="contactClass">Класс</label><select id="contactClass" name="class"><option value="">Выберите</option><option value="9">9 (ОГЭ)</option><option value="10">10</option><option value="11">11 (ЕГЭ)</option></select></div>
+        <div class="form-group"><label for="contactSubject">Предмет</label><select id="contactSubject" name="subject"><option value="">Выберите</option><option value="math">Математика</option><option value="russian">Русский</option><option value="physics">Физика</option><option value="social">Обществознание</option></select></div>
+        <div class="form-group"><label for="contactGoal">Цель</label><select id="contactGoal" name="goal"><option value="">Выберите</option><option value="ege">ЕГЭ</option><option value="oge">ОГЭ</option></select></div>
+        <button type="submit" class="btn btn-primary">Отправить</button>
+      </form>
+      <address class="contact-info">
+        <h3>Адрес</h3>
+        <p>г. Москва, ул. Образцова, 12<br>м. Достоевская, 5 мин</p>
+        <h3>Телефон</h3><a href="tel:+74951234567">+7 (495) 123-45-67</a>
+        <h3>Email</h3><a href="mailto:info@ege-center.ru">info@ege-center.ru</a>
+        <h3>График</h3><p>Пн–Пт 10:00–20:00, Сб 10:00–16:00</p>
+        <h3>Соцсети</h3><a href="https://vk.com" target="_blank" rel="noopener">ВКонтакте</a>, <a href="https://www.google.com/maps" target="_blank" rel="noopener">Карты</a>
+      </address>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="wrap footer-inner">
+      <address><strong>Контакты</strong><br>г. Москва, ул. Образцова, 12<br><a href="tel:+74951234567">+7 (495) 123-45-67</a><br><a href="mailto:info@ege-center.ru">info@ege-center.ru</a></address>
+      <p><strong>Лицензия</strong><br>№ 12345 от 01.01.2020</p>
+    </div>
+    <small class="footer-copy">© 2025 Центр подготовки к ЕГЭ и ОГЭ</small>
+  </footer>
+  <script src="script.js"></script>
+</body>
+</html>
